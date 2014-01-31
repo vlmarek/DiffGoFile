@@ -200,7 +200,7 @@ function <SID>ParseUnified (pos)
 	silent exe "let g:cnt=0 | ".l:at_line.",".l:current_line."g/^-/let g:cnt=g:cnt+1"
 
 	try
-		?^+++
+		?^+++ 
 	catch /Pattern not found/
 		" echoerr "Does not look like unified diff - can't find ^+++ (".v:throwpoint.")"
 		return
